@@ -14,12 +14,10 @@ function tableItemGenerator() {
     createElement('th', "*", tableTheadTr)
     for (let i = 1; i <= 10; i++) {
         createElement('th', i, tableTheadTr)
-        if (i <= 10) {
-            const tableTr = createElement('tr', null, tBody);
-            createElement('th', i, tableTr);
-            for (let t = 1; t <= 10; t++) {
-                createElement('td', i * t, tableTr);
-            }
+        const tableTr = createElement('tr', null, tBody);
+        createElement('th', i, tableTr);
+        for (let t = 1; t <= 10; t++) {
+            createElement('td', i * t, tableTr);
         }
     }
 }
@@ -29,7 +27,7 @@ function createElement(tag, text, parent) {
     if (text !== undefined && text !== null) {
         newEl.textContent = text;
     }
-    if(parent !== undefined && parent !== null) {
+    if (parent !== undefined && parent !== null) {
         parent.append(newEl);
     }
     return newEl;
