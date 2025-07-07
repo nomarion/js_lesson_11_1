@@ -1,0 +1,21 @@
+.table {
+    width: 20%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background: antiquewhite;
+
+    thead {
+        background: #e4e4e4;
+    }
+
+    th {
+        background: #e4e4e4;
+    }
+
+    td {
+        text-align: center;
+    }
+}
+
